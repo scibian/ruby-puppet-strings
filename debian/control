@@ -1,0 +1,16 @@
+Source: ruby-puppet-strings
+Section: ruby
+Priority: optional
+Maintainer: Thomas Hamel <thomas-externe.hamel@edf.fr>
+Build-Depends: debhelper (>= 9), gem2deb
+Standards-Version: 3.9.5
+Homepage: https://github.com/puppetlabs/puppetlabs-strings
+XS-Ruby-Versions: all
+
+Package: ruby-puppet-strings
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: Puppet documentation via YARD
+ Extends the puppet command to provide "puppet strings". This new command
+ generates documentation for the module with YARD.
