@@ -1,3 +1,9 @@
+ruby-puppet-strings (0.4.0-0sci8u1) scibian8; urgency=medium
+
+  * Scibian8 rebuild.
+
+ -- Thomas Hamel <thomas-externe.hamel@edf.fr>  Wed, 13 Dec 2017 18:04:11 +0100
+
 ruby-puppet-strings (0.4.0-0~calibre9+1) calibre9; urgency=medium
 
   * Initial release
