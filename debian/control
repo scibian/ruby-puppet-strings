@@ -1,10 +1,12 @@
 Source: ruby-puppet-strings
 Section: ruby
 Priority: optional
-Maintainer: Thomas Hamel <thomas-externe.hamel@edf.fr>
+Maintainer: Scibian Project <packaging@scibian.org>
 Build-Depends: debhelper (>= 9), gem2deb
 Standards-Version: 3.9.5
 Homepage: https://github.com/puppetlabs/puppetlabs-strings
+Vcs-Git: https://github.com/scibian/ruby-puppet-strings.git
+Vcs-Browser: https://github.com/scibian/ruby-puppet-strings
 XS-Ruby-Versions: all
 
 Package: ruby-puppet-strings
