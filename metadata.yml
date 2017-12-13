@@ -1,0 +1,142 @@
+--- !ruby/object:Gem::Specification
+name: puppet-strings
+version: !ruby/object:Gem::Version
+  version: 0.4.0
+platform: ruby
+authors:
+- Puppet Labs
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2016-03-30 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: puppet
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 3.7.0
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 3.7.0
+- !ruby/object:Gem::Dependency
+  name: yard
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.8'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.8'
+description: Puppet documentation via YARD
+email: info@puppetlabs.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- lib/puppet-strings/rake_tasks.rb
+- lib/puppet/application/strings.rb
+- lib/puppet/face/strings.rb
+- lib/puppet/feature/rgen.rb
+- lib/puppet/feature/yard.rb
+- lib/puppet_x/puppetlabs/strings.rb
+- lib/puppet_x/puppetlabs/strings/actions.rb
+- lib/puppet_x/puppetlabs/strings/pops/yard_statement.rb
+- lib/puppet_x/puppetlabs/strings/pops/yard_transformer.rb
+- lib/puppet_x/puppetlabs/strings/util.rb
+- lib/puppet_x/puppetlabs/strings/yard/code_objects/defined_type_object.rb
+- lib/puppet_x/puppetlabs/strings/yard/code_objects/host_class_object.rb
+- lib/puppet_x/puppetlabs/strings/yard/code_objects/method_object.rb
+- lib/puppet_x/puppetlabs/strings/yard/code_objects/provider_object.rb
+- lib/puppet_x/puppetlabs/strings/yard/code_objects/puppet_namespace_object.rb
+- lib/puppet_x/puppetlabs/strings/yard/code_objects/type_object.rb
+- lib/puppet_x/puppetlabs/strings/yard/core_ext/yard.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/base.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/defined_type_handler.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/heredoc_helper.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/host_class_handler.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/provider_handler.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/puppet_3x_function_handler.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/puppet_4x_function_handler.rb
+- lib/puppet_x/puppetlabs/strings/yard/handlers/type_handler.rb
+- lib/puppet_x/puppetlabs/strings/yard/json_registry_store.rb
+- lib/puppet_x/puppetlabs/strings/yard/monkey_patches.rb
+- lib/puppet_x/puppetlabs/strings/yard/parser.rb
+- lib/puppet_x/puppetlabs/strings/yard/tags/directives.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/definedtype/html/docstring.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/definedtype/html/header.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/definedtype/html/parameter_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/definedtype/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/definedtype/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/fulldoc/html/full_list_class.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/fulldoc/html/full_list_puppet_manifest.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/fulldoc/html/full_list_puppet_plugin.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/fulldoc/html/full_list_puppet_provider.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/fulldoc/html/full_list_puppet_type.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/fulldoc/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/hostclass/html/box_info.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/hostclass/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/hostclass/html/subclasses.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/hostclass/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/html_helper.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/layout/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/method_details/html/header.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/method_details/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/method_details/text/header.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/command_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/confine_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/default_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/docstring.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/feature_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/header.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/provider/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/puppetnamespace/html/box_info.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/puppetnamespace/html/header.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/puppetnamespace/html/method_details_list.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/puppetnamespace/html/method_summary.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/puppetnamespace/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/puppetnamespace/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/template_helper.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/type/html/docstring.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/type/html/header.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/type/html/parameter_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/type/html/provider_details.erb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/type/html/setup.rb
+- lib/puppet_x/puppetlabs/strings/yard/templates/default/type/setup.rb
+homepage: https://github.com/puppetlabs/puppetlabs-strings
+licenses:
+- Apache-2.0
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.5
+signing_key: 
+specification_version: 4
+summary: Puppet documentation via YARD
+test_files: []
+has_rdoc: 
